@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora!</title>
+    <link rel="icon" href="W.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .top{
+        width: 100%;
+        height: 70px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        margin: 0px;
+    }
+    .logo{
+        height: 75px;
+        width: 80px;
+        margin-left: 40px;
+        display: inline-block;
+        margin-top: -5px;
+    }
+    .top ul{
+        display: flex;
+        margin-left: 340px;
+        padding: 5px;
+        margin-top: 15px;
+        font-family: Georgia, serif;
+    }
+    .top li{
+        display: inline-block;
+        margin-right:40px;
+        font-weight: bold;
+        cursor: pointer;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .top li:hover{
+        background-color: rgb(255, 205, 205);
+        border-radius: 3px;
+        margin-bottom: 20px;
+        transform: scale(1.1);
+    }
+    i{
+        margin-top: 5px;
+        cursor: pointer;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    i:hover{
+        transform: scale(1.2);
+    }
+    .remaining{
+        width: 100%;
+        height: 580px;
+        display: flex;
+    }
+    .one,.two,.three{
+        height: 400px;
+        width: 400px;
+        margin-top: 93px;
+        margin-right: -30px;
+        margin-left: 75px;
+    }
+    .buy:hover{
+        background-color: rgb(189, 94, 94);
+        border-color: rgb(191, 105, 105);
+    }
+    .buy{
+        border-radius: 5px;
+        border-style: solid;
+        background-color:rgb(191, 105, 105);
+        border-color: rgb(191, 105, 105);
+        color: white;
+        padding: 15px;
+        width: 92px;
+        margin-left: 110px;
+        margin-right: 60px;
+        margin-top: -50px;
+        cursor: pointer;
+    }
+    .first{
+        height: 400px;
+        width: 400px;
+        border-radius: 5px;
+    }
+    body{
+        background-image: url('https://i.pinimg.com/564x/dc/8c/31/dc8c3146034d3a7c3284c5ac89c6eb9b.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .products{
+        background-color:rgb(255, 245, 249);
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    .roww{
+        display: flex;
+        margin-left: 150px;
+        margin-bottom: 70px;
+    }
+    .ele{
+        display: block;
+        text-align: center;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: rgb(234, 234, 234);
+        margin-right: 70px;
+        cursor: pointer;
+    }
+    .ele:hover{
+        transform: scale(1.1);
+        background-color: rgb(234, 234, 234);
+    }
+    .pic{
+        height: 250px;
+        width: 250px;
+    }
+    h3{
+        font-size: 25px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        margin-bottom: 8px;
+    }
+    .foot{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-top: 30px;
+        margin-left: 100px;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .foot h1{
+        padding-bottom: 30px;
+    }
+    .foot i{
+        margin-right: 20px;
+    }
+</style>
+<body>
+    <div class="top">
+        <img src="W.png" alt="cannot load" class="logo">
+            <ul>
+                <li>Home</li>
+                <li id="produ">Products</li>
+                <li >Testimonials</li>
+                <li id="contact">Contact</li>
+            </ul>
+            <ul>
+                <i class="fa fa-search"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-shopping-cart"></i>
+            </ul>
+    </div>
+    <div class="remaining">
+        <div class="one">
+            <img class="first" src="https://i.pinimg.com/564x/fa/87/de/fa87de6b5a4fc4b7ee4080e48675b46b.jpg" alt="cannot load">
+        </div>
+        <div class="two">
+            <h1 style="padding: 65px; font-family: Georgia, serif;">Capture <span style="color: rgb(191, 105, 105)">Hearts</span> with Our Exquisite Floral Collections!</h1>
+            <h2 class="buy">Buy now</h2>
+        </div>
+        <div class="three">
+        </div>
+    </div>
+    <div class="products" id="produ1">
+        <div class="roww">
+            <div class="ele"><img class="pic" src="https://i.pinimg.com/564x/0b/3a/9c/0b3a9cd1779debfd423ea16071b849f3.jpg" alt="nothing"><h3>Bouquets</h3></div>
+            <div class="ele"><img class="pic" src="https://i.pinimg.com/564x/4c/97/2f/4c972fc2f33d96791437a3265adcdd08.jpg" alt="nothing"><h3>Perfumes</h3></div>
+            <div class="ele"><img class="pic" src="https://i.pinimg.com/564x/af/7d/b5/af7db52a43f77112a6710ec45dc9a455.jpg" alt="nothing"><h3>Essential Oils</h3></div>
+            <div class="ele"><img class="pic" src="https://i.pinimg.com/564x/f9/c9/ca/f9c9cabcef6fc3c03c0c680d3fea9f77.jpg" alt="nothing"><h3>Jewelry</h3></div>
+        </div>
+        <div class="roww">
+            <div class="ele"><img class="pic" src="https://i.pinimg.com/736x/e5/d9/68/e5d9685a746f6f131ca4fb395d1c026e.jpg" alt="nothing"><h3>Tea</h3></div>
+            <div class="ele"><img class="pic" src="https://i.pinimg.com/564x/6e/28/81/6e28811c0e044a06b95ceefab830cd30.jpg" alt="nothing"><h3>Medicine</h3></div>
+            <div class="ele"><img class="pic" src="https://i.pinimg.com/736x/dd/02/dd/dd02dd74637592726fc44044b096e88d.jpg" alt="nothing"><h3>Edible Flowers</h3></div>
+            <div class="ele"><img class="pic" src="https://i.pinimg.com/564x/f3/05/69/f3056941ac45861301630c19271177ff.jpg" alt="nothing"><h3>Honey</h3></div>
+        </div>
+        <div class="roww">
+            <div class="ele"><img class="pic" src="https://i.pinimg.com/564x/5a/10/29/5a102953939027c262d806260e53c1aa.jpg" alt="nothing"><h3>Floral Art</h3></div>
+            <div class="ele"><img class="pic" src="https://i.pinimg.com/736x/c9/d6/24/c9d624db8c36b3d6bc8f3fb7ea6c6f70.jpg" alt="nothing"><h3>Cosmetics</h3></div>
+            <div class="ele"><img class="pic" src="https://i.pinimg.com/736x/75/89/0e/75890e5afcd91967bd12f2233d27dfbc.jpg" alt="nothing"><h3>Candles</h3></div>
+            <div class="ele"><img class="pic" src="https://i.pinimg.com/736x/fe/20/56/fe20563518c8efa20ceae495c2003758.jpg" alt="nothing"><h3>Fragrant Sachets</h3></div>
+        </div>
+    </div>
+    <div class="foot" id="contact1">
+        <h1 class="last">Contact Us:</h1>
+        <i class="fa fa-twitter" style="font-size:66px"></i>
+        <i class="fa fa-facebook" style="font-size:66px"></i>
+        <i class="fa fa-instagram" style="font-size:66px"></i>
+        <i class="fa fa-whatsapp" style="font-size:66px"></i>
+        <i class="fa fa-youtube" style="font-size:66px"></i>
+        <i class="fa fa-snapchat" style="font-size:66px"></i>
+    </div>
+    <script>
+        document.getElementById('produ').addEventListener('click', function() {
+            document.getElementById('produ1').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        });
+        document.getElementById('contact').addEventListener('click', function() {
+            document.getElementById('contact1').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        });
+    </script>
+</body>
+</html>
